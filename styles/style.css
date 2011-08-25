@@ -1,0 +1,274 @@
+/*
+Primary Stylesheet for the layout of fetchi front-end
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	text-rendering: optimizeLegibility;
+	font: 12pt 'TitilliumText22LMedium', Arial, sans-serif;
+	vertical-align: baseline;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+form:active {outline:none;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Header */
+
+#header {
+	background: #282828;
+	background: -moz-linear-gradient(top, #282828 0%, #181818 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282828), color-stop(100%,#181818));
+	background: -webkit-linear-gradient(top, #282828 0%,#181818 100%);
+	background: -o-linear-gradient(top, #282828 0%,#181818 100%);
+	background: -ms-linear-gradient(top, #282828 0%,#181818 100%);
+	background: linear-gradient(top, #282828 0%,#181818 100%);
+	width: 100%;
+}
+
+#head_wrap {
+	width: 960px;
+	padding-top: 5px;
+	height: 55px;
+	margin: 0 auto;
+}
+
+#head_wrap a {
+	color: #fff;
+	font: 18px/20px 'TitilliumText22LMedium', Arial, sans-serif;
+	font-style: bold;
+	text-decoration: none;
+	margin: 0 5px 0 5px;
+}
+
+#head_wrap a:hover {
+	color: #75a92c;
+}
+
+.menu-active {
+	color: #75a92c !important;
+}
+
+#head_wrap div {
+	float: left;
+	color: #fff;
+}
+
+.logo {
+	margin-right: 20px;
+	background: url('../images/logo.png');
+	width: 79px;
+	height: 50px;
+}
+
+.logolink {
+	display: block;
+	width: 79px;
+	height: 50px;
+}
+
+#menu {
+	overflow: hidden;
+	margin-top: 15px;
+}
+
+.ul-menu {
+	
+}
+
+.ul-menu li {
+	float: left;
+	overflow: hidden;
+}
+
+#search {
+	width: 320px;
+}
+
+.searchbar {
+	width: 310px;
+}
+
+.searchform, .searchform_active {
+	width: 290px;
+	background: #181818;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0 0 20px;
+	padding: 0 0 0 10px;
+	border: none;
+	height: 30px;
+	box-shadow: 0px 1px 1px #333, inset 0px 2px 5px #000;
+	background: -moz-linear-gradient(top, #181818 0%, #171717 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282828), color-stop(100%,#181818));
+	background: -webkit-linear-gradient(top, #282828 0%,#181818 100%);
+	background: -o-linear-gradient(top, #282828 0%,#181818 100%);
+	background: -ms-linear-gradient(top, #282828 0%,#181818 100%);
+	background: linear-gradient(top, #171717 0%,#181818 100%);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+
+}
+
+.searchform_active {
+	outline: none;
+}
+
+#user {
+	float: right !important;
+	width: 120px;
+	height: 20px;
+	margin-top: 7px;
+	padding: 8px 0 8px 10px;
+	background: #1a1a1a;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+#user .user-avatar {
+	width: 20px;
+	height: 20px;
+}
+
+#user .user-name {
+	margin-left: 10px;
+}
+
+#user .user-active {
+	display: none;
+	background: #1a1a1a;
+	width: 125px;
+	margin-left: -10px;
+	padding: 10px 0 10px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+#user .user-active li {
+	list-style: none;
+}
+
+#user .user-active a {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#user:hover .user-active {
+	display: block;
+}
+
+/* Main Content */
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#content {
+	width: 750px;
+}
+
+#name-header {
+	margin-top: 25px;
+}
+
+#content #name-header .user-avatar {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+}
+
+#content #name-header .user-name {
+	font: 24px/24px 'TitilliumText22LBold', Arial, sans-serif;
+	color: #75a92c;
+}
+
+.index-menu {
+
+}
+.index-menu ul {
+	margin-top: 3px;
+}
+
+.index-menu li {
+	float: left;
+	margin-right: 10px;
+}
+
+.index-menu li a {
+	text-decoration: none;
+	color: #282828;
+	font: 14px/24px 'TitilliumText22LMedium', Arial, sans-serif;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.index-menu li a:hover {
+	color: #fff;
+	background: #282828;
+	border-radius: 3px;
+}
+
+.index-button-menu {
+	float: right;
+}
+
+
+
+
+/* Buttons */
+
+.button-new {
+	background: #75a92c;
+	border-radius: 3px;
+	color: #fff;
+	padding: 4px 20px;
+	text-decoration: none;
+	font-size: 15px;
+}
